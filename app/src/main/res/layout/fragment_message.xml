@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:text="消息" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:background="@drawable/button_inf"
+                android:src="@drawable/love"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/right"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:text="获赞和收藏" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:background="@drawable/button_inf2"
+                android:src="@drawable/pinglun"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/right"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:text="收到的评论和@" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:background="@drawable/button_inf3"
+                android:src="@drawable/guanzhu"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/right"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:text="新增关注" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:background="@drawable/button_inf4"
+                android:src="@drawable/tongzhi"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/right"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:text="通知消息" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/date">
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:background="@drawable/button_inf5"
+                android:src="@drawable/tongzhi"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/right"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:text="时间管理" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="4dp"
+    app:cardBackgroundColor="#ffffffff"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/pic1"
+            android:id="@+id/iv_showpic"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp" />
+        <!--标题-->
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_showpic"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="最近的真爱！"
+            android:textColor="@color/colorAccent" />
+        <!--内容-->
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_tv"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="一直想入手的TF口红 还是跟风入了一支热门16号！" />
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginStart="10dp"
+            android:id="@+id/iv_touxiang"
+            android:src="@drawable/touxiang1"
+            android:layout_below="@id/tv_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/iv_touxiang"
+            android:text="_梦总奇妙" />
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/tv_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/tv_username"
+            android:src="@drawable/dz" />
+
+        <TextView
+            android:id="@+id/tv_likequantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/iv_like"
+            android:text="236" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

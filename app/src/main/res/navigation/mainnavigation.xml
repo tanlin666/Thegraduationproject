@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainnavigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.tlandhmy.bueatifullife.view.fragment.HomeFragment"
+        android:label="主页"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_video"
+        android:name="com.tlandhmy.bueatifullife.view.fragment.VideoFragment"
+        android:label="视频"
+        tools:layout="@layout/fragment_video">
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_append"
+        android:name="com.tlandhmy.bueatifullife.view.fragment.AddFragment"
+        android:label="添加"
+        tools:layout="@layout/fragment_add">
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.tlandhmy.bueatifullife.view.fragment.MessageFragment"
+        android:label="消息"
+        tools:layout="@layout/fragment_message">
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_mine"
+        android:name="com.tlandhmy.bueatifullife.view.fragment.MineFragment"
+        android:label="我的"
+        tools:layout="@layout/fragment_mine">
+    </fragment>
+
+</navigation>
