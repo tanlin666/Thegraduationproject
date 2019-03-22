@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation"
+    app:startDestination="@id/navigation_login">
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.tlandhmy.bueatifullife.view.fragment.LoginFragment"
+        android:label="login"
+        tools:layout="@layout/fragment_login">
+    </fragment>
+    <action android:id="@+id/action_login_to_register"
+        app:destination="@id/navigation_register"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out" />
+    <fragment
+        android:id="@+id/navigation_register"
+        android:name="com.tlandhmy.bueatifullife.view.fragment.RegisterFragment"
+        android:label="register"
+        tools:layout="@layout/fragment_register">
+    </fragment>
+    <action android:id="@+id/action_login_to_forgetpassword"
+        app:destination="@id/navigation_forgetpassword"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out" />
+    <fragment
+        android:id="@+id/navigation_forgetpassword"
+        android:name="com.tlandhmy.bueatifullife.view.fragment.ForgetPasswordFragment"
+        android:label="forgetpassword"
+        tools:layout="@layout/fragment_forget_password">
+    </fragment>
+
+</navigation>

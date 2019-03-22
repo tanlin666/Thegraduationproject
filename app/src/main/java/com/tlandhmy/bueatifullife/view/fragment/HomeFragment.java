@@ -1,6 +1,7 @@
 package com.tlandhmy.bueatifullife.view.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -14,6 +15,7 @@ import android.view.ViewGroup;
 import com.jcodecraeer.xrecyclerview.ProgressStyle;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.tlandhmy.bueatifullife.R;
+import com.tlandhmy.bueatifullife.view.activity.HomeDetailsActivity;
 
 import java.util.zip.Inflater;
 
@@ -34,7 +36,6 @@ public class HomeFragment extends Fragment implements XRecyclerView.LoadingListe
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -51,7 +52,6 @@ public class HomeFragment extends Fragment implements XRecyclerView.LoadingListe
         homeRv.setAdapter(new HomeFgAdapter());
         return view;
     }
-
 
     @Override
     public void onDestroyView() {
@@ -81,12 +81,18 @@ public class HomeFragment extends Fragment implements XRecyclerView.LoadingListe
         @NonNull
         @Override
         public HomeFgAdapter_ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-            return new HomeFgAdapter_ViewHolder(LayoutInflater.from(getActivity()).inflate(R.layout.fragment_home_item,viewGroup,false));
+            return new HomeFgAdapter_ViewHolder(LayoutInflater.from(getActivity()).inflate(R.layout.fragment_home_item, viewGroup, false));
         }
 
         @Override
         public void onBindViewHolder(@NonNull HomeFgAdapter_ViewHolder viewHolder, int i) {
-
+            viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getActivity(), HomeDetailsActivity.class);
+                    startActivity(intent);
+                }
+            });
         }
 
         @Override
@@ -95,10 +101,8 @@ public class HomeFragment extends Fragment implements XRecyclerView.LoadingListe
         }
 
         public class HomeFgAdapter_ViewHolder extends RecyclerView.ViewHolder {
-
-            public HomeFgAdapter_ViewHolder(@NonNull View itemView) {
+           public   HomeFgAdapter_ViewHolder(@NonNull View itemView) {
                 super(itemView);
-
             }
         }
 

@@ -9,17 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".view.activity.HomeActivity">
+        <activity android:name=".view.activity.NotificationmessageActivity"></activity>
+        <activity android:name=".view.activity.NewfucosActivity" />
+        <activity android:name=".view.activity.ReceivedcommentsActivity" />
+        <activity android:name=".view.activity.WonthepraiseActivity" />
+        <activity android:name=".view.activity.VideoDetailsActivity" />
+        <activity android:name=".view.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-  <!--      <activity
-            android:name=".view.activity.HomeActivity"
-            android:label="@string/title_activity_home"></activity>-->
+        <activity
+            android:name=".view.activity.LoginActivity"
+            android:label="@string/title_activity_home" />
+        <activity android:name=".view.activity.HomeDetailsActivity" />
     </application>
 
 </manifest>
