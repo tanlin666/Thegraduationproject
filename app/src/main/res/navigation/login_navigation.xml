@@ -30,5 +30,15 @@
         android:label="forgetpassword"
         tools:layout="@layout/fragment_forget_password">
     </fragment>
+    <action android:id="@+id/action_register_to_setpassword"
+        app:destination="@id/navigation_setpassword"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out" />
+    <fragment
+        android:id="@+id/navigation_setpassword"
+        android:name="com.tlandhmy.bueatifullife.view.fragment.SetpasswordFragment"
+        android:label="setpassword"
+        tools:layout="@layout/fragment_setpassword">
+    </fragment>
 
 </navigation>

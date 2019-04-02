@@ -40,9 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:layout_marginEnd="35dp"
         android:text="密码"
-        app:layout_constraintEnd_toStartOf="@+id/et_password"
         app:layout_constraintStart_toStartOf="@+id/tv_phonenumber"
         app:layout_constraintTop_toBottomOf="@+id/et_phonenumber" />
 
@@ -50,7 +48,7 @@
         android:id="@+id/et_phonenumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="33dp"
+        android:layout_marginEnd="72dp"
         android:ems="10"
         android:hint="请输入手机号"
         android:inputType="phone"
@@ -61,22 +59,23 @@
         android:id="@+id/et_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="33dp"
+        android:layout_marginTop="45dp"
         android:ems="10"
         android:hint="请输入密码"
         android:inputType="textPassword"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tv_password"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/et_phonenumber"
+        app:layout_constraintStart_toStartOf="@+id/et_phonenumber"
+        app:layout_constraintTop_toBottomOf="@+id/et_phonenumber" />
 
     <TextView
         android:id="@+id/tv_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginBottom="135dp"
+        android:layout_marginTop="32dp"
         android:text="注册"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tv_password" />
+        app:layout_constraintStart_toStartOf="@+id/et_password"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
 
     <TextView
         android:id="@+id/tv_forgetpassword"
@@ -86,6 +85,16 @@
         android:text="忘记密码"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_register"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:src="@android:drawable/ic_menu_send"
+        app:layout_constraintBottom_toBottomOf="@+id/et_password"
+        app:layout_constraintStart_toEndOf="@+id/et_password"
+        app:layout_constraintTop_toTopOf="@+id/et_password" />
 
 
 </android.support.constraint.ConstraintLayout>

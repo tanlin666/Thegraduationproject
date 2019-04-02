@@ -12,9 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="13dp"
         android:text="手机号"
+        android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/et_phonenumber"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,17 +24,15 @@
         android:id="@+id/et_phonenumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="请输入手机号"
         android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tv_phonenumber"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_phonenumber"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
@@ -42,4 +41,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_phonenumber" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

@@ -28,20 +28,26 @@ public class VideoDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_video_details);
         ButterKnife.bind(this);
 
+        intview();
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-//设置布局管理器
-        videocommentRv.setLayoutManager(layoutManager);
-//设置为垂直布局，这也是默认的
-        layoutManager.setOrientation(OrientationHelper.VERTICAL);
-//设置Adapter
-        videocommentRv.setAdapter(new CommentAdapter());
-//设置增加或删除条目的动画
-        videocommentRv.setItemAnimator(new DefaultItemAnimator());
-        videocommentRv.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+
     }
 
-    public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentViewholder> {
+    private void intview(){
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        //设置布局管理器
+        videocommentRv.setLayoutManager(layoutManager);
+        //设置为垂直布局，这也是默认的
+        layoutManager.setOrientation(OrientationHelper.VERTICAL);
+        //设置Adapter
+        videocommentRv.setAdapter(new CommentAdapter());
+        //设置增加或删除条目的动画
+        videocommentRv.setItemAnimator(new DefaultItemAnimator());
+        videocommentRv.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+
+    }
+
+    private class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentViewholder> {
 
         @NonNull
         @Override
@@ -57,7 +63,7 @@ public class VideoDetailsActivity extends AppCompatActivity {
             return 10;
         }
 
-        class CommentViewholder extends RecyclerView.ViewHolder {
+       private class CommentViewholder extends RecyclerView.ViewHolder {
             public CommentViewholder(@NonNull View itemView) {
                 super(itemView);
             }

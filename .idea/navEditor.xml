@@ -8,7 +8,17 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+                  <entry key="action_login_to_forgetpassword">
+                    <value>
+                      <LayoutPositions />
+                    </value>
+                  </entry>
                   <entry key="action_login_to_register">
+                    <value>
+                      <LayoutPositions />
+                    </value>
+                  </entry>
+                  <entry key="action_register_to_setpassword">
                     <value>
                       <LayoutPositions />
                     </value>
@@ -43,6 +53,18 @@
                         <option name="myPosition">
                           <Point>
                             <option name="x" value="168" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="navigation_setpassword">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
                             <option name="y" value="12" />
                           </Point>
                         </option>
